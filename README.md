@@ -5,3 +5,10 @@
 软件栈：Docker、Hadoop（可使用DockerHub的Hadoop镜像）
 ## 报告
 咕咕咕
+
+## TODO_LIST
+- [x] 爬虫
+- [ ] Mapper
+- [ ] Reducer
+- [ ] 网页前端
+- [ ] 网页后端
