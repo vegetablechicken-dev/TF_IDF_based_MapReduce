@@ -8,7 +8,7 @@
 
 ## TODO_LIST
 - [x] 爬虫
-- [ ] Mapper
-- [ ] Reducer
+- [x] Mapper
+- [x] Reducer
 - [ ] 网页前端
 - [ ] 网页后端
