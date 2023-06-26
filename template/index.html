@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>搜索</title>
+</head>
+<body>
+<center>
+    <h1>主页</h1>
+    <form method="POST">
+        <input type="text" name="keyword" placeholder="请输入关键词进行搜索">
+        <input type="submit">
+    </form>
+</center>
+<center><h2>最新文章</h2></center>
+{% for i in range(5) %}
+    <h3>标题：{{data[i]['title']}}</h3>
+    <p>&nbsp &nbsp &nbsp &nbsp发布时间：{{data[i]['time']}}</p>
+    <p>&nbsp &nbsp &nbsp &nbsp原⽂链接：<a href="{{data[i]['url']}}">{{data[i]['url']}}</a></p>
+    {% for p in data[i]['content'] %}
+        <p>&nbsp &nbsp {{p}}</p>
+    {% endfor %}
+    <br>
+{% endfor %}
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>搜索结果</title>
+</head>
+<body>
+    <center>
+        <h1>结果</h1>
+        <h2>关键词为：{{' '.join(keywords)}}</h2>
+        <h3>共搜索到以下{{num}}个结果</h3>
+        
+    </center>
+    {% for item in result %}
+        <h4>标题：{{origin_text[item[0]]['title']}}</h4>
+        <p>&nbsp &nbsp &nbsp &nbsp发布日期：{{origin_text[item[0]]['time']}}</p>
+        <p>&nbsp &nbsp &nbsp &nbsp原⽂链接：<a href="{{origin_text[item[0]]['url']}}">{{origin_text[item[0]]['url']}}</a></p>
+        {% for p in item[1] %}
+            <p>&nbsp &nbsp &nbsp &nbsp{{origin_text[item[0]]['content'][p]}}</p>
+        {% endfor %}
+        <br>
+    {% endfor %}
+</body>
+</html>

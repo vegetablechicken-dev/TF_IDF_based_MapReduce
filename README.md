@@ -8,7 +8,16 @@
 
 ## TODO_LIST
 - [x] 爬虫
+
 - [x] Mapper
+
 - [x] Reducer
-- [ ] 网页前端
-- [ ] 网页后端
+
+- [x] 网页前端
+
+- [x] 网页后端
+
+## 一些问题的解决方案
+[(62条消息) ERROR: Pool overlaps with other one on this address space_bjzhaoxiao的博客-CSDN博客](https://blog.csdn.net/bjzhaoxiao/article/details/95622301)
+
+https://blog.csdn.net/m0_59308369/article/details/127227456
